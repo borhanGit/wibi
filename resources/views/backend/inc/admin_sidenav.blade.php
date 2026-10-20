@@ -1820,13 +1820,13 @@
                             <span class="aiz-side-nav-arrow"></span>
                         </a>
                         <ul class="aiz-side-nav-list level-2">
-                            @can('select_homepage')
+                            <!-- @can('select_homepage')
                                 <li class="aiz-side-nav-item">
                                     <a href="{{ route('website.select-homepage') }}" class="aiz-side-nav-link">
                                         <span class="aiz-side-nav-text">{{translate('Select Homepage')}}</span>
                                     </a>
                                 </li>
-                            @endcan
+                            @endcan -->
                             @can('edit_website_page')
                                 <li class="aiz-side-nav-item">
                                     <a href="{{ route('custom-pages.edit', ['id' => 'home', 'lang' => env('DEFAULT_LANGUAGE'), 'page' => 'home']) }}"
